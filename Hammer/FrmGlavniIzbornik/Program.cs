@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hammer
+namespace FrmGlavniIzbornik
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Hammer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrijava());
+            Application.Run(new Form1());
         }
     }
 }

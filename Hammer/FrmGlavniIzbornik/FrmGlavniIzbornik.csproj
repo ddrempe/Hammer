@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36E83AF0-DBAA-44A2-9BF4-9BC79E605948}</ProjectGuid>
+    <ProjectGuid>{878EA656-CA04-4A71-8DD0-F9007F4FCBC1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hammer</RootNamespace>
-    <AssemblyName>Hammer</AssemblyName>
+    <RootNamespace>FrmGlavniIzbornik</RootNamespace>
+    <AssemblyName>FrmGlavniIzbornik</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,23 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmGlavniIzbornik.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGlavniIzbornik.Designer.cs">
-      <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPrijava.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPrijava.Designer.cs">
-      <DependentUpon>FrmPrijava.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmPrijava.resx">
-      <DependentUpon>FrmPrijava.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
