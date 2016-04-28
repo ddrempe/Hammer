@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmEvidencijaASiV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvidencijaASiV.Designer.cs">
+      <DependentUpon>FrmEvidencijaASiV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEvidencijaGiZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvidencijaGiZ.Designer.cs">
+      <DependentUpon>FrmEvidencijaGiZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEvidencijaSiM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvidencijaSiM.Designer.cs">
+      <DependentUpon>FrmEvidencijaSiM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEvidencijaDiK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvidencijaDiK.Designer.cs">
+      <DependentUpon>FrmEvidencijaDiK.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGlavniIzbornik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmGlavniIzbornik.resx">
+      <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrijava.resx">
       <DependentUpon>FrmPrijava.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,6 +112,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helmet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
