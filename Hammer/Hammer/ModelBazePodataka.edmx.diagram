@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9a886e9b0fc14e139f718181b3873947" Name="Diagram1">
+        <EntityTypeShape EntityType="HammerModel.alati" Width="1.5" PointX="3.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.dobavljaci" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.dobavljaci_materijali" Width="1.5" PointX="11" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.gradilista" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.izracun" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.izvode_radove" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.kooperanti" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.korisnik" Width="1.5" PointX="5.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.koriste" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.materijali" Width="1.5" PointX="8.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.obracun_placa" Width="1.5" PointX="3" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.rade" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.skladista" Width="1.5" PointX="8.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.skladiste_materijali" Width="1.5" PointX="11" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.strojevi" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.vozni_park" Width="1.5" PointX="0.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HammerModel.zaposlenici" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="HammerModel.FK_koriste_alati" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_dobavljaci_materijali_dobavljaci" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_dobavljaci_materijali_materijali" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_izvode_radove_gradilista" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_koriste_gradilista" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_rade_gradilista" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_zaposlenici_gradilista" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_izracun_obracun_placa" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_izracun_zaposlenici" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_izvode_radove_kooperanti" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_skladiste_materijali_materijali" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_rade_strojevi" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_skladiste_materijali_skladista" ManuallyRouted="false" />
+        <AssociationConnector Association="HammerModel.FK_zaposlenici_vozni_park" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -33,8 +33,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +57,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alati.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dobavljaci.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dobavljaci_materijali.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajGradilista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajGradilista.Designer.cs">
+      <DependentUpon>frmDodajGradilista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajZaposlenik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajZaposlenik.Designer.cs">
+      <DependentUpon>frmDodajZaposlenik.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEvidencijaASiV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +114,74 @@
     <Compile Include="FrmPrijava.Designer.cs">
       <DependentUpon>FrmPrijava.cs</DependentUpon>
     </Compile>
+    <Compile Include="gradilista.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="izracun.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="izvode_radove.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="kooperanti.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="korisnik.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="koriste.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="materijali.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBazePodataka.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBazePodataka.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBazePodataka.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBazePodataka.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="obracun_placa.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rade.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="skladista.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="skladiste_materijali.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="strojevi.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vozni_park.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zaposlenici.cs">
+      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDodajGradilista.resx">
+      <DependentUpon>frmDodajGradilista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajZaposlenik.resx">
+      <DependentUpon>frmDodajZaposlenik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEvidencijaGiZ.resx">
+      <DependentUpon>FrmEvidencijaGiZ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGlavniIzbornik.resx">
       <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +198,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EntityDeploy Include="ModelBazePodataka.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelBazePodataka.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelBazePodataka.edmx.diagram">
+      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\gradilista.datasource" />
+    <None Include="Properties\DataSources\zaposlenici.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,6 +235,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelBazePodataka.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
+      <LastGenOutput>ModelBazePodataka.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelBazePodataka.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
+      <LastGenOutput>ModelBazePodataka.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
