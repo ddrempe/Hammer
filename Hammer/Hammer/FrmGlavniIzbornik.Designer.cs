@@ -42,6 +42,7 @@
             this.obračunPlaćaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.evidencijaDobavljačaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.izlazToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -74,7 +75,8 @@
             this.evidencijaMaterijalaToolStripMenuItem,
             this.obračunPlaćaToolStripMenuItem,
             this.evidencijaDobavljačaToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.izlazToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1166, 28);
@@ -135,6 +137,13 @@
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
+            // izlazToolStripMenuItem
+            // 
+            this.izlazToolStripMenuItem.Name = "izlazToolStripMenuItem";
+            this.izlazToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.izlazToolStripMenuItem.Text = "Izlaz";
+            this.izlazToolStripMenuItem.Click += new System.EventHandler(this.izlazToolStripMenuItem_Click);
+            // 
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "C:\\Users\\Matej Cvitkovic\\Documents\\Hammer\\help.chm";
@@ -175,6 +184,7 @@
         private System.Windows.Forms.ToolStripMenuItem evidencijaDobavljačaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ToolStripMenuItem izlazToolStripMenuItem;
     }
 }
 

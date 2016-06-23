@@ -66,7 +66,7 @@ namespace Hammer
         private void showMyHelp()
         {
             string path = Path.GetDirectoryName(Application.ExecutablePath);
-            path = "file://" + Path.Combine(path, "help.chm");
+            path = "file://" + Path.Combine(path, "..\\..\\help.chm");
             Help.ShowHelp(this, path);
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -79,5 +79,9 @@ namespace Hammer
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
+        private void izlazToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
