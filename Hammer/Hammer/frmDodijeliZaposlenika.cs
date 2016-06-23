@@ -21,10 +21,26 @@ namespace Hammer
         private void PrikaziZaposlenike()
         {
             BindingList<zaposlenici> listaZaposlenika = null;
-            zaposleniciBindingSource.DataSource = listaZaposlenika;
+            List<zaposlenici> listaPostojecih = new List<zaposlenici>();
+
             using (var db = new Entities())
             {
+                gradilista gradiliste = db.gradilista.FirstOrDefault(m => m.ID == gradilisteDodijeli.ID);
+                foreach (var item in db.zaposlenici)
+                {
+                    foreach (var zaposlenik in gradiliste.zaposlenici)
+                    {
+                        if (zaposlenik == item)
+                        {
+                            listaPostojecih.Add(zaposlenik);
+                        }
+                    }
+                }
                 listaZaposlenika = new BindingList<zaposlenici>(db.zaposlenici.ToList());
+            }
+            foreach (var zaposlenik in listaPostojecih)
+            {
+                listaZaposlenika.Remove(zaposlenik);
             }
             zaposleniciBindingSource.DataSource = listaZaposlenika;
         }

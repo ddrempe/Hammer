@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmZaposlenici));
             this.dgvZaposlenici = new System.Windows.Forms.DataGridView();
-            this.btnDodajZaposlenika = new System.Windows.Forms.Button();
-            this.btnObrisiZaposlenika = new System.Windows.Forms.Button();
-            this.btnUrediZaposlenika = new System.Windows.Forms.Button();
             this.oibDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.strucnaspremaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.satnicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zaposleniciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnDodajZaposlenika = new System.Windows.Forms.Button();
+            this.btnObrisiZaposlenika = new System.Windows.Forms.Button();
+            this.btnUrediZaposlenika = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zaposleniciBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -59,36 +60,6 @@
             this.dgvZaposlenici.RowTemplate.Height = 24;
             this.dgvZaposlenici.Size = new System.Drawing.Size(864, 330);
             this.dgvZaposlenici.TabIndex = 0;
-            // 
-            // btnDodajZaposlenika
-            // 
-            this.btnDodajZaposlenika.Location = new System.Drawing.Point(567, 357);
-            this.btnDodajZaposlenika.Name = "btnDodajZaposlenika";
-            this.btnDodajZaposlenika.Size = new System.Drawing.Size(86, 37);
-            this.btnDodajZaposlenika.TabIndex = 1;
-            this.btnDodajZaposlenika.Text = "Dodaj";
-            this.btnDodajZaposlenika.UseVisualStyleBackColor = true;
-            this.btnDodajZaposlenika.Click += new System.EventHandler(this.btnDodajZaposlenika_Click);
-            // 
-            // btnObrisiZaposlenika
-            // 
-            this.btnObrisiZaposlenika.Location = new System.Drawing.Point(777, 357);
-            this.btnObrisiZaposlenika.Name = "btnObrisiZaposlenika";
-            this.btnObrisiZaposlenika.Size = new System.Drawing.Size(99, 38);
-            this.btnObrisiZaposlenika.TabIndex = 2;
-            this.btnObrisiZaposlenika.Text = "Obriši";
-            this.btnObrisiZaposlenika.UseVisualStyleBackColor = true;
-            this.btnObrisiZaposlenika.Click += new System.EventHandler(this.btnObrisiZaposlenika_Click);
-            // 
-            // btnUrediZaposlenika
-            // 
-            this.btnUrediZaposlenika.Location = new System.Drawing.Point(672, 357);
-            this.btnUrediZaposlenika.Name = "btnUrediZaposlenika";
-            this.btnUrediZaposlenika.Size = new System.Drawing.Size(86, 38);
-            this.btnUrediZaposlenika.TabIndex = 3;
-            this.btnUrediZaposlenika.Text = "Uredi";
-            this.btnUrediZaposlenika.UseVisualStyleBackColor = true;
-            this.btnUrediZaposlenika.Click += new System.EventHandler(this.btnUrediZaposlenika_Click);
             // 
             // oibDataGridViewTextBoxColumn
             // 
@@ -124,6 +95,36 @@
             // 
             this.zaposleniciBindingSource.DataSource = typeof(Hammer.zaposlenici);
             // 
+            // btnDodajZaposlenika
+            // 
+            this.btnDodajZaposlenika.Location = new System.Drawing.Point(567, 357);
+            this.btnDodajZaposlenika.Name = "btnDodajZaposlenika";
+            this.btnDodajZaposlenika.Size = new System.Drawing.Size(86, 37);
+            this.btnDodajZaposlenika.TabIndex = 1;
+            this.btnDodajZaposlenika.Text = "Dodaj";
+            this.btnDodajZaposlenika.UseVisualStyleBackColor = true;
+            this.btnDodajZaposlenika.Click += new System.EventHandler(this.btnDodajZaposlenika_Click);
+            // 
+            // btnObrisiZaposlenika
+            // 
+            this.btnObrisiZaposlenika.Location = new System.Drawing.Point(777, 357);
+            this.btnObrisiZaposlenika.Name = "btnObrisiZaposlenika";
+            this.btnObrisiZaposlenika.Size = new System.Drawing.Size(99, 38);
+            this.btnObrisiZaposlenika.TabIndex = 2;
+            this.btnObrisiZaposlenika.Text = "Obriši";
+            this.btnObrisiZaposlenika.UseVisualStyleBackColor = true;
+            this.btnObrisiZaposlenika.Click += new System.EventHandler(this.btnObrisiZaposlenika_Click);
+            // 
+            // btnUrediZaposlenika
+            // 
+            this.btnUrediZaposlenika.Location = new System.Drawing.Point(672, 357);
+            this.btnUrediZaposlenika.Name = "btnUrediZaposlenika";
+            this.btnUrediZaposlenika.Size = new System.Drawing.Size(86, 38);
+            this.btnUrediZaposlenika.TabIndex = 3;
+            this.btnUrediZaposlenika.Text = "Uredi";
+            this.btnUrediZaposlenika.UseVisualStyleBackColor = true;
+            this.btnUrediZaposlenika.Click += new System.EventHandler(this.btnUrediZaposlenika_Click);
+            // 
             // frmZaposlenici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -133,8 +134,8 @@
             this.Controls.Add(this.btnObrisiZaposlenika);
             this.Controls.Add(this.btnDodajZaposlenika);
             this.Controls.Add(this.dgvZaposlenici);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmZaposlenici";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmZaposlenici";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).EndInit();

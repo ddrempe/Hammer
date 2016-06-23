@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDodajGradiliste));
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnSpremi = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -139,6 +140,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtNaziv);
             this.Controls.Add(this.txtID);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDodajGradiliste";
             this.Text = "frmDodajGradiliste";
             this.Load += new System.EventHandler(this.frmDodajGradiliste_Load);

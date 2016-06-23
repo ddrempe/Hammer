@@ -17,11 +17,7 @@ namespace Hammer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public strojevi()
         {
-<<<<<<< HEAD
             this.gradilista = new HashSet<gradilista>();
-=======
-            this.rade = new HashSet<rade>();
->>>>>>> origin/master
         }
     
         public int id { get; set; }
@@ -33,10 +29,6 @@ namespace Hammer
         public Nullable<int> snaga { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-<<<<<<< HEAD
         public virtual ICollection<gradilista> gradilista { get; set; }
-=======
-        public virtual ICollection<rade> rade { get; set; }
->>>>>>> origin/master
     }
 }

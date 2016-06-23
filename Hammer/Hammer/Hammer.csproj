@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBConnection">
+      <HintPath>DBConnection\DBConnection.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -58,38 +61,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="alati.cs">
-<<<<<<< HEAD
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="dobavljaci.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="dobavljaci_materijali.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="frmDodajGradiliste.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDodajGradiliste.Designer.cs">
       <DependentUpon>frmDodajGradiliste.cs</DependentUpon>
-=======
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dobavljaci.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dobavljaci_materijali.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="frmDodajGradilista.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDodajGradilista.Designer.cs">
-      <DependentUpon>frmDodajGradilista.cs</DependentUpon>
->>>>>>> origin/master
     </Compile>
     <Compile Include="frmDodajZaposlenik.cs">
       <SubType>Form</SubType>
@@ -97,15 +81,12 @@
     <Compile Include="frmDodajZaposlenik.Designer.cs">
       <DependentUpon>frmDodajZaposlenik.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="frmDodijeliZaposlenika.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDodijeliZaposlenika.Designer.cs">
       <DependentUpon>frmDodijeliZaposlenika.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> origin/master
     <Compile Include="FrmEvidencijaASiV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,7 +123,6 @@
     <Compile Include="FrmPrijava.Designer.cs">
       <DependentUpon>FrmPrijava.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="frmZaposlenici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,138 +131,60 @@
     </Compile>
     <Compile Include="gradilista.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="izracun.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="kooperanti.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="korisnik.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="materijali.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.Context.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="obracun_placa.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="skladista.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="skladiste_materijali.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="strojevi.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="vozni_park.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="zaposlenici.cs">
       <DependentUpon>Model.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <EmbeddedResource Include="frmDodajGradiliste.resx">
       <DependentUpon>frmDodajGradiliste.cs</DependentUpon>
-=======
-    <Compile Include="gradilista.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="izracun.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="izvode_radove.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="kooperanti.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="korisnik.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="koriste.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="materijali.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelBazePodataka.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelBazePodataka.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelBazePodataka.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelBazePodataka.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="obracun_placa.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rade.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="skladista.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="skladiste_materijali.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="strojevi.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="vozni_park.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <Compile Include="zaposlenici.cs">
-      <DependentUpon>ModelBazePodataka.tt</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="frmDodajGradilista.resx">
-      <DependentUpon>frmDodajGradilista.cs</DependentUpon>
->>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="frmDodajZaposlenik.resx">
       <DependentUpon>frmDodajZaposlenik.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="frmDodijeliZaposlenika.resx">
       <DependentUpon>frmDodijeliZaposlenika.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,13 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGlavniIzbornik.resx">
       <DependentUpon>frmGlavniIzbornik.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="FrmEvidencijaGiZ.resx">
-      <DependentUpon>FrmEvidencijaGiZ.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmGlavniIzbornik.resx">
-      <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
->>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrijava.resx">
       <DependentUpon>FrmPrijava.cs</DependentUpon>
@@ -315,23 +210,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EntityDeploy>
     <None Include="Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-=======
-    <EntityDeploy Include="ModelBazePodataka.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelBazePodataka.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ModelBazePodataka.edmx.diagram">
-      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
->>>>>>> origin/master
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\gradilista.datasource" />
@@ -365,29 +249,15 @@
     <None Include="Resources\businessman.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.Context.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-=======
-    <Content Include="ModelBazePodataka.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
-      <LastGenOutput>ModelBazePodataka.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelBazePodataka.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelBazePodataka.edmx</DependentUpon>
-      <LastGenOutput>ModelBazePodataka.cs</LastGenOutput>
->>>>>>> origin/master
     </Content>
   </ItemGroup>
   <ItemGroup>

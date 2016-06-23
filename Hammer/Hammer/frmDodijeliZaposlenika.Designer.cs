@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDodijeliZaposlenika));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.zaposleniciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSpremi = new System.Windows.Forms.Button();
@@ -111,6 +112,7 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.comboBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDodijeliZaposlenika";
             this.Text = "frmDodijeliZaposlenika";
             this.Load += new System.EventHandler(this.frmDodijeliZaposlenika_Load);

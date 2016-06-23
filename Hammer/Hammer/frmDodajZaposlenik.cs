@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,7 +13,6 @@ namespace Hammer
 {
     public partial class frmDodajZaposlenik : Form
     {
-<<<<<<< HEAD
         private zaposlenici zaposlenikIzmjena;
         public frmDodajZaposlenik()
         {
@@ -27,55 +27,56 @@ namespace Hammer
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-            using (var db = new Entities())
+            if (txtOIB.Text == "" || txtIme.Text == "" || txtPrezime.Text == "" || txtStrucna.Text == "" || txtSatnica.Text == "")
             {
-                if (zaposlenikIzmjena == null)
+                MessageBox.Show("Sva polja moraju biti unesena!");
+                return;
+            }else
+            {
+                string oib = txtOIB.Text;
+                Match provjera = Regex.Match(oib, @"^\d{11}$");
+                using (var db = new Entities())
                 {
-                    zaposlenici zaposlenik = new zaposlenici();
+                    if (zaposlenikIzmjena == null)
                     {
-                        zaposlenik.oib = txtOIB.Text;
-                        zaposlenik.ime = txtIme.Text;
-                        zaposlenik.prezime = txtPrezime.Text;
-                        zaposlenik.strucna_sprema = txtStrucna.Text;
-                        zaposlenik.satnica = txtSatnica.Text;
-                    
-                    };
-                    db.zaposlenici.Add(zaposlenik);
-                    db.SaveChanges();
-                }
-                else
-                {
-                    txtOIB.Enabled = false;
-                    db.zaposlenici.Attach(zaposlenikIzmjena);
-                    zaposlenikIzmjena.ime = txtIme.Text;
-                    zaposlenikIzmjena.prezime = txtPrezime.Text;
-                    zaposlenikIzmjena.strucna_sprema = txtStrucna.Text;
-                    zaposlenikIzmjena.satnica = txtSatnica.Text;
-                    db.SaveChanges();
-                }
+                        zaposlenici zaposlenik = new zaposlenici();
+                        {
+                            if (provjera.Success)
+                            {
+                                zaposlenik.oib = txtOIB.Text;
+                                zaposlenik.ime = txtIme.Text;
+                                zaposlenik.prezime = txtPrezime.Text;
+                                zaposlenik.strucna_sprema = txtStrucna.Text;
+                                zaposlenik.satnica = txtSatnica.Text;
 
-=======
-        public frmDodajZaposlenik()
-        {
-            InitializeComponent();
-        }
+                                foreach (var item in db.zaposlenici)
+                                {
+                                    if (txtOIB.Text == item.oib)
+                                    {
+                                        MessageBox.Show("Uneseni OIB već postoji!");
+                                        return;
+                                    }
+                                }
+                                db.zaposlenici.Add(zaposlenik);
+                                db.SaveChanges();
+                            }else{
+                                MessageBox.Show("Polje OIB se sastoji od 11 brojeva!");
+                                return;
+                            }  
+                        };
+                    }
+                    else
+                    {
+                        db.zaposlenici.Attach(zaposlenikIzmjena);
+                        zaposlenikIzmjena.oib = txtOIB.Text;
+                        zaposlenikIzmjena.ime = txtIme.Text;
+                        zaposlenikIzmjena.prezime = txtPrezime.Text;
+                        zaposlenikIzmjena.strucna_sprema = txtStrucna.Text;
+                        zaposlenikIzmjena.satnica = txtSatnica.Text;
+                        db.SaveChanges();
+                    }
 
-        private void btnDodaj_Click(object sender, EventArgs e)
-        {
-            using (var db = new Entities())
-            {
-                zaposlenici zaposlenik = new zaposlenici();
-                {
-                    zaposlenik.oib = txtOIB.Text;
-                    zaposlenik.ime = txtIme.Text;
-                    zaposlenik.prezime = txtPrezime.Text;
-                    zaposlenik.gradilista_id = comboBox1.SelectedIndex;
-                    zaposlenik.strucna_sprema = txtStrucnaSprema.Text;
-                    zaposlenik.od = dtpOd.Value;
-                };
-                db.zaposlenici.Add(zaposlenik);
-                db.SaveChanges();
->>>>>>> origin/master
+                }
             }
             Close();
         }
@@ -84,7 +85,6 @@ namespace Hammer
         {
             this.Close();
         }
-<<<<<<< HEAD
 
         private void frmDodajZaposlenik_Load(object sender, EventArgs e)
         {
@@ -98,7 +98,5 @@ namespace Hammer
                 txtSatnica.Text = zaposlenikIzmjena.satnica;
             }
         }
-=======
->>>>>>> origin/master
     }
 }

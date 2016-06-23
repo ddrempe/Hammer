@@ -17,11 +17,7 @@ namespace Hammer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public kooperanti()
         {
-<<<<<<< HEAD
             this.gradilista = new HashSet<gradilista>();
-=======
-            this.izvode_radove = new HashSet<izvode_radove>();
->>>>>>> origin/master
         }
     
         public string oib { get; set; }
@@ -32,10 +28,6 @@ namespace Hammer
         public string opis { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-<<<<<<< HEAD
         public virtual ICollection<gradilista> gradilista { get; set; }
-=======
-        public virtual ICollection<izvode_radove> izvode_radove { get; set; }
->>>>>>> origin/master
     }
 }

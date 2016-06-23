@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DBConnection;
 namespace Hammer
 {
     public partial class FrmPrijava : Form
     {
-public FrmPrijava()
+        public FrmPrijava()
         {
             InitializeComponent();
         }
@@ -51,16 +51,16 @@ public FrmPrijava()
                 {
 
                     this.Hide();
-                    frmGlavniIzbornik glavniIzbornik = new frmGlavniIzbornik();
+                    var glavniIzbornik = new frmGlavniIzbornik();
                     glavniIzbornik.Closed += (s, args) => this.Close();
                     glavniIzbornik.Show();
                 }
                 else
                 {
                     MessageBox.Show("Prijava nije ispravna!");
-                } 
-              
-               
+                }
+
+
             }
         }
     }

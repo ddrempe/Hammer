@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGlavniIzbornik));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -40,6 +41,8 @@
             this.evidencijaMaterijalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.obračunPlaćaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.evidencijaDobavljačaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +55,7 @@
             this.statusStrip.Location = new System.Drawing.Point(0, 533);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip.Size = new System.Drawing.Size(984, 25);
+            this.statusStrip.Size = new System.Drawing.Size(1166, 25);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -70,10 +73,11 @@
             this.evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem,
             this.evidencijaMaterijalaToolStripMenuItem,
             this.obračunPlaćaToolStripMenuItem,
-            this.evidencijaDobavljačaToolStripMenuItem});
+            this.evidencijaDobavljačaToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(984, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1166, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -124,13 +128,25 @@
             this.evidencijaDobavljačaToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.evidencijaDobavljačaToolStripMenuItem.Text = "Evidencija dobavljača";
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Matej Cvitkovic\\Documents\\Hammer\\help.chm";
+            // 
             // frmGlavniIzbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 558);
+            this.ClientSize = new System.Drawing.Size(1166, 558);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -157,6 +173,8 @@
         private System.Windows.Forms.ToolStripMenuItem evidencijaMaterijalaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem obračunPlaćaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem evidencijaDobavljačaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 
