@@ -10,61 +10,52 @@ using System.Windows.Forms;
 
 namespace Hammer
 {
-    public partial class FrmGlavniIzbornik : Form
+    public partial class frmGlavniIzbornik : Form
     {
-        public FrmGlavniIzbornik()
+        public frmGlavniIzbornik()
         {
             InitializeComponent();
         }
-
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        FrmEvidencijaGiZ forma1;
+        frmZaposlenici forma2;
+        private void evidencijaZaposlenikaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (forma2 == null)
+            {
+                forma2 = new frmZaposlenici();
+                forma2.MdiParent = this;
+                forma2.FormClosed += new FormClosedEventHandler(Forma2_FormClosed);
+                forma2.Show();
+            }
+            else
+            {
+                forma2.Activate();
+            }
         }
 
-        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void Forma2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
-            var prijava = new FrmPrijava();
-            prijava.Closed += (s, args) => this.Close();
-            prijava.Show();
+            forma2 = null;
         }
 
-        private void FrmGlavniIzbornik_Load(object sender, EventArgs e)
+        private void Forma1_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            forma1 = null;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var evidencijaGiZ = new FrmEvidencijaGiZ();
-            evidencijaGiZ.Closed += (s, args) => this.Close();
-            evidencijaGiZ.Show();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var evidencijaASiV = new FrmEvidencijaASiV();
-            evidencijaASiV.Closed += (s, args) => this.Close();
-            evidencijaASiV.Show();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var evidencijaSiM= new FrmEvidencijaSiM();
-            evidencijaSiM.Closed += (s, args) => this.Close();
-            evidencijaSiM.Show();
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var evidencijaDiK = new FrmEvidencijaDiK();
-            evidencijaDiK.Closed += (s, args) => this.Close();
-            evidencijaDiK.Show();
+            if (forma1 == null)
+            {
+                forma1 = new FrmEvidencijaGiZ();
+                forma1.MdiParent = this;
+                forma1.FormClosed += new FormClosedEventHandler(Forma1_FormClosed);
+                forma1.Show();
+            }
+            else
+            {
+                forma1.Activate();
+            }
         }
     }
 }

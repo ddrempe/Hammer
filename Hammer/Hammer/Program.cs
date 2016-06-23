@@ -16,7 +16,11 @@ namespace Hammer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
+            Application.Run(new frmGlavniIzbornik());
+=======
             Application.Run(new FrmEvidencijaGiZ());
+>>>>>>> origin/master
         }
     }
 }

@@ -18,6 +18,11 @@ namespace Hammer
         public zaposlenici()
         {
             this.izracun = new HashSet<izracun>();
+<<<<<<< HEAD
+            this.gradilista = new HashSet<gradilista>();
+            this.vozni_park = new HashSet<vozni_park>();
+=======
+>>>>>>> origin/master
         }
     
         public string oib { get; set; }
@@ -25,6 +30,15 @@ namespace Hammer
         public string prezime { get; set; }
         public string strucna_sprema { get; set; }
         public string satnica { get; set; }
+<<<<<<< HEAD
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<izracun> izracun { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<gradilista> gradilista { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<vozni_park> vozni_park { get; set; }
+=======
         public int gradilista_id { get; set; }
         public Nullable<System.DateTime> od { get; set; }
         public System.DateTime @do { get; set; }
@@ -34,5 +48,6 @@ namespace Hammer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<izracun> izracun { get; set; }
         public virtual vozni_park vozni_park { get; set; }
+>>>>>>> origin/master
     }
 }

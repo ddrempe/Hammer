@@ -1,6 +1,6 @@
 ﻿namespace Hammer
 {
-    partial class FrmGlavniIzbornik
+    partial class frmGlavniIzbornik
     {
         /// <summary>
         /// Required designer variable.
@@ -28,190 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.evidencijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.evidencijaZaposlenikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.evidencijaMaterijalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.obračunPlaćaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.evidencijaDobavljačaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 533);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip.Size = new System.Drawing.Size(984, 25);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(49, 20);
+            this.toolStripStatusLabel.Text = "Status";
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logoutToolStripMenuItem});
+            this.evidencijaToolStripMenuItem,
+            this.evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem,
+            this.evidencijaMaterijalaToolStripMenuItem,
+            this.obračunPlaćaToolStripMenuItem,
+            this.evidencijaDobavljačaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(381, 28);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Size = new System.Drawing.Size(984, 28);
+            this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // logoutToolStripMenuItem
+            // evidencijaToolStripMenuItem
             // 
-            this.logoutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helpToolStripMenuItem,
-            this.exitToolStripMenuItem1,
-            this.logoutToolStripMenuItem1});
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
-            this.logoutToolStripMenuItem.Text = "Options";
+            this.evidencijaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.evidencijaZaposlenikaToolStripMenuItem,
+            this.gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem});
+            this.evidencijaToolStripMenuItem.Name = "evidencijaToolStripMenuItem";
+            this.evidencijaToolStripMenuItem.Size = new System.Drawing.Size(244, 24);
+            this.evidencijaToolStripMenuItem.Text = "Evidencija gradilišta i zaposlenika";
             // 
-            // helpToolStripMenuItem
+            // evidencijaZaposlenikaToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.helpToolStripMenuItem.Text = "Help(F1)";
+            this.evidencijaZaposlenikaToolStripMenuItem.Name = "evidencijaZaposlenikaToolStripMenuItem";
+            this.evidencijaZaposlenikaToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
+            this.evidencijaZaposlenikaToolStripMenuItem.Text = "Evidencija zaposlenika";
+            this.evidencijaZaposlenikaToolStripMenuItem.Click += new System.EventHandler(this.evidencijaZaposlenikaToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem1
+            // gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem
             // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.exitToolStripMenuItem1.Text = "Exit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            this.gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem.Name = "gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem";
+            this.gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
+            this.gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem.Text = "Gradilišta i dodjeljivanje zaposlenika";
+            this.gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem.Click += new System.EventHandler(this.gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem_Click);
             // 
-            // logoutToolStripMenuItem1
+            // evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem
             // 
-            this.logoutToolStripMenuItem1.Name = "logoutToolStripMenuItem1";
-            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.logoutToolStripMenuItem1.Text = "Logout";
-            this.logoutToolStripMenuItem1.Click += new System.EventHandler(this.logoutToolStripMenuItem1_Click);
+            this.evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem.Name = "evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem";
+            this.evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem.Text = "Evidencija alata,strojeva i voznog parka";
             // 
-            // label1
+            // evidencijaMaterijalaToolStripMenuItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Evidencija gradilišta i zaposlenika";
+            this.evidencijaMaterijalaToolStripMenuItem.Name = "evidencijaMaterijalaToolStripMenuItem";
+            this.evidencijaMaterijalaToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.evidencijaMaterijalaToolStripMenuItem.Text = "Evidencija materijala";
             // 
-            // label2
+            // obračunPlaćaToolStripMenuItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 147);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(258, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Evidencija alata,strojeva i voznog parka";
+            this.obračunPlaćaToolStripMenuItem.Name = "obračunPlaćaToolStripMenuItem";
+            this.obračunPlaćaToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.obračunPlaćaToolStripMenuItem.Text = "Obračun plaća";
             // 
-            // label3
+            // evidencijaDobavljačaToolStripMenuItem
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(86, 249);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Evidencija materijala na skladištu";
+            this.evidencijaDobavljačaToolStripMenuItem.Name = "evidencijaDobavljačaToolStripMenuItem";
+            this.evidencijaDobavljačaToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.evidencijaDobavljačaToolStripMenuItem.Text = "Evidencija dobavljača";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(86, 351);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(235, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Evidencija dobavljača i kooperanata";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Hammer.Properties.Resources.businessman;
-            this.pictureBox5.Location = new System.Drawing.Point(141, 371);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(87, 70);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Hammer.Properties.Resources.stock;
-            this.pictureBox3.Location = new System.Drawing.Point(141, 278);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(87, 70);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Hammer.Properties.Resources.tools;
-            this.pictureBox2.Location = new System.Drawing.Point(142, 176);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Hammer.Properties.Resources.helmet;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 72);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // FrmGlavniIzbornik
+            // frmGlavniIzbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 461);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(984, 558);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FrmGlavniIzbornik";
-            this.Text = "FrmGlavniIzbornik";
-            this.Load += new System.EventHandler(this.FrmGlavniIzbornik_Load);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmGlavniIzbornik";
+            this.Text = "frmGlavniIzbornik";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
         #endregion
-
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.ToolStripMenuItem evidencijaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem evidencijaZaposlenikaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gradilištaIDodjeljivanjeZaposlenikaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem evidencijaAlatastrojevaiVoznogParkaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem evidencijaMaterijalaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem obračunPlaćaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem evidencijaDobavljačaToolStripMenuItem;
     }
 }
+
+
+

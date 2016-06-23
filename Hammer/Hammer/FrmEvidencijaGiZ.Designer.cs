@@ -29,6 +29,78 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
+            this.dgvGradilista = new System.Windows.Forms.DataGridView();
+            this.btnUrediGradiliste = new System.Windows.Forms.Button();
+            this.btnObrisiGradiliste = new System.Windows.Forms.Button();
+            this.btnDodajGradiliste = new System.Windows.Forms.Button();
+            this.dgvZaposlenici = new System.Windows.Forms.DataGridView();
+            this.btnObrisiZaposlenika = new System.Windows.Forms.Button();
+            this.btnDodajZaposlenika = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oibDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.satnicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zaposleniciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aktivanodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aktivandoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gradilistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGradilista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zaposleniciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradilistaBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvGradilista
+            // 
+            this.dgvGradilista.AutoGenerateColumns = false;
+            this.dgvGradilista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGradilista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.nazivDataGridViewTextBoxColumn,
+            this.aktivanodDataGridViewTextBoxColumn,
+            this.aktivandoDataGridViewTextBoxColumn});
+            this.dgvGradilista.DataSource = this.gradilistaBindingSource;
+            this.dgvGradilista.Location = new System.Drawing.Point(12, 12);
+            this.dgvGradilista.Name = "dgvGradilista";
+            this.dgvGradilista.RowTemplate.Height = 24;
+            this.dgvGradilista.Size = new System.Drawing.Size(720, 169);
+            this.dgvGradilista.TabIndex = 0;
+            this.dgvGradilista.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // btnUrediGradiliste
+            // 
+            this.btnUrediGradiliste.Location = new System.Drawing.Point(528, 188);
+            this.btnUrediGradiliste.Name = "btnUrediGradiliste";
+            this.btnUrediGradiliste.Size = new System.Drawing.Size(86, 38);
+            this.btnUrediGradiliste.TabIndex = 6;
+            this.btnUrediGradiliste.Text = "Uredi";
+            this.btnUrediGradiliste.UseVisualStyleBackColor = true;
+            this.btnUrediGradiliste.Click += new System.EventHandler(this.btnUrediGradiliste_Click);
+            // 
+            // btnObrisiGradiliste
+            // 
+            this.btnObrisiGradiliste.Location = new System.Drawing.Point(633, 188);
+            this.btnObrisiGradiliste.Name = "btnObrisiGradiliste";
+            this.btnObrisiGradiliste.Size = new System.Drawing.Size(99, 38);
+            this.btnObrisiGradiliste.TabIndex = 5;
+            this.btnObrisiGradiliste.Text = "Obriši";
+            this.btnObrisiGradiliste.UseVisualStyleBackColor = true;
+            this.btnObrisiGradiliste.Click += new System.EventHandler(this.btnObrisiGradiliste_Click);
+            // 
+            // btnDodajGradiliste
+            // 
+            this.btnDodajGradiliste.Location = new System.Drawing.Point(423, 188);
+            this.btnDodajGradiliste.Name = "btnDodajGradiliste";
+            this.btnDodajGradiliste.Size = new System.Drawing.Size(86, 37);
+            this.btnDodajGradiliste.TabIndex = 4;
+            this.btnDodajGradiliste.Text = "Dodaj";
+            this.btnDodajGradiliste.UseVisualStyleBackColor = true;
+            this.btnDodajGradiliste.Click += new System.EventHandler(this.btnDodajGradiliste_Click);
+            // 
+=======
             this.dgvZaposlenici = new System.Windows.Forms.DataGridView();
             this.btnDodaj = new System.Windows.Forms.Button();
             this.btnIzmijeni = new System.Windows.Forms.Button();
@@ -58,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.zaposleniciBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+>>>>>>> origin/master
             // dgvZaposlenici
             // 
             this.dgvZaposlenici.AutoGenerateColumns = false;
@@ -66,6 +139,41 @@
             this.oibDataGridViewTextBoxColumn,
             this.imeDataGridViewTextBoxColumn,
             this.prezimeDataGridViewTextBoxColumn,
+<<<<<<< HEAD
+            this.satnicaDataGridViewTextBoxColumn});
+            this.dgvZaposlenici.DataSource = this.zaposleniciBindingSource;
+            this.dgvZaposlenici.Location = new System.Drawing.Point(12, 231);
+            this.dgvZaposlenici.Name = "dgvZaposlenici";
+            this.dgvZaposlenici.RowTemplate.Height = 24;
+            this.dgvZaposlenici.Size = new System.Drawing.Size(720, 150);
+            this.dgvZaposlenici.TabIndex = 7;
+            // 
+            // btnObrisiZaposlenika
+            // 
+            this.btnObrisiZaposlenika.Location = new System.Drawing.Point(633, 386);
+            this.btnObrisiZaposlenika.Name = "btnObrisiZaposlenika";
+            this.btnObrisiZaposlenika.Size = new System.Drawing.Size(99, 38);
+            this.btnObrisiZaposlenika.TabIndex = 9;
+            this.btnObrisiZaposlenika.Text = "Obriši";
+            this.btnObrisiZaposlenika.UseVisualStyleBackColor = true;
+            this.btnObrisiZaposlenika.Click += new System.EventHandler(this.btnObrisiZaposlenika_Click);
+            // 
+            // btnDodajZaposlenika
+            // 
+            this.btnDodajZaposlenika.Location = new System.Drawing.Point(528, 387);
+            this.btnDodajZaposlenika.Name = "btnDodajZaposlenika";
+            this.btnDodajZaposlenika.Size = new System.Drawing.Size(86, 37);
+            this.btnDodajZaposlenika.TabIndex = 8;
+            this.btnDodajZaposlenika.Text = "Dodaj";
+            this.btnDodajZaposlenika.UseVisualStyleBackColor = true;
+            this.btnDodajZaposlenika.Click += new System.EventHandler(this.btnDodajZaposlenika_Click);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+=======
             this.strucnaspremaDataGridViewTextBoxColumn,
             this.satnicaDataGridViewTextBoxColumn,
             this.gradilistaidDataGridViewTextBoxColumn,
@@ -180,22 +288,38 @@
             // gradilistaBindingSource
             // 
             this.gradilistaBindingSource.DataSource = typeof(Hammer.gradilista);
+>>>>>>> origin/master
             // 
             // oibDataGridViewTextBoxColumn
             // 
             this.oibDataGridViewTextBoxColumn.DataPropertyName = "oib";
+<<<<<<< HEAD
+            this.oibDataGridViewTextBoxColumn.HeaderText = "OIB";
+=======
             this.oibDataGridViewTextBoxColumn.HeaderText = "oib";
+>>>>>>> origin/master
             this.oibDataGridViewTextBoxColumn.Name = "oibDataGridViewTextBoxColumn";
             // 
             // imeDataGridViewTextBoxColumn
             // 
             this.imeDataGridViewTextBoxColumn.DataPropertyName = "ime";
+<<<<<<< HEAD
+            this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
+            this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
+            this.imeDataGridViewTextBoxColumn.Width = 150;
+=======
             this.imeDataGridViewTextBoxColumn.HeaderText = "ime";
             this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
+>>>>>>> origin/master
             // 
             // prezimeDataGridViewTextBoxColumn
             // 
             this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
+<<<<<<< HEAD
+            this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
+            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
+            this.prezimeDataGridViewTextBoxColumn.Width = 150;
+=======
             this.prezimeDataGridViewTextBoxColumn.HeaderText = "prezime";
             this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
             // 
@@ -204,10 +328,43 @@
             this.strucnaspremaDataGridViewTextBoxColumn.DataPropertyName = "strucna_sprema";
             this.strucnaspremaDataGridViewTextBoxColumn.HeaderText = "strucna_sprema";
             this.strucnaspremaDataGridViewTextBoxColumn.Name = "strucnaspremaDataGridViewTextBoxColumn";
+>>>>>>> origin/master
             // 
             // satnicaDataGridViewTextBoxColumn
             // 
             this.satnicaDataGridViewTextBoxColumn.DataPropertyName = "satnica";
+<<<<<<< HEAD
+            this.satnicaDataGridViewTextBoxColumn.HeaderText = "Satnica";
+            this.satnicaDataGridViewTextBoxColumn.Name = "satnicaDataGridViewTextBoxColumn";
+            // 
+            // zaposleniciBindingSource
+            // 
+            this.zaposleniciBindingSource.DataSource = typeof(Hammer.zaposlenici);
+            // 
+            // nazivDataGridViewTextBoxColumn
+            // 
+            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv gradilišta";
+            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
+            // 
+            // aktivanodDataGridViewTextBoxColumn
+            // 
+            this.aktivanodDataGridViewTextBoxColumn.DataPropertyName = "aktivan_od";
+            this.aktivanodDataGridViewTextBoxColumn.HeaderText = "Početak radova";
+            this.aktivanodDataGridViewTextBoxColumn.Name = "aktivanodDataGridViewTextBoxColumn";
+            this.aktivanodDataGridViewTextBoxColumn.Width = 160;
+            // 
+            // aktivandoDataGridViewTextBoxColumn
+            // 
+            this.aktivandoDataGridViewTextBoxColumn.DataPropertyName = "aktivan_do";
+            this.aktivandoDataGridViewTextBoxColumn.HeaderText = "Završetak radova";
+            this.aktivandoDataGridViewTextBoxColumn.Name = "aktivandoDataGridViewTextBoxColumn";
+            this.aktivandoDataGridViewTextBoxColumn.Width = 160;
+            // 
+            // gradilistaBindingSource
+            // 
+            this.gradilistaBindingSource.DataSource = typeof(Hammer.gradilista);
+=======
             this.satnicaDataGridViewTextBoxColumn.HeaderText = "satnica";
             this.satnicaDataGridViewTextBoxColumn.Name = "satnicaDataGridViewTextBoxColumn";
             // 
@@ -240,11 +397,31 @@
             // zaposleniciBindingSource
             // 
             this.zaposleniciBindingSource.DataSource = typeof(Hammer.zaposlenici);
+>>>>>>> origin/master
             // 
             // FrmEvidencijaGiZ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(744, 426);
+            this.Controls.Add(this.btnObrisiZaposlenika);
+            this.Controls.Add(this.btnDodajZaposlenika);
+            this.Controls.Add(this.dgvZaposlenici);
+            this.Controls.Add(this.btnUrediGradiliste);
+            this.Controls.Add(this.btnObrisiGradiliste);
+            this.Controls.Add(this.btnDodajGradiliste);
+            this.Controls.Add(this.dgvGradilista);
+            this.Name = "FrmEvidencijaGiZ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "EvidencijaGiZ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmEvidencijaGiZ_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGradilista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zaposleniciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradilistaBindingSource)).EndInit();
+=======
             this.ClientSize = new System.Drawing.Size(1002, 449);
             this.Controls.Add(this.btnObrisiGradilista);
             this.Controls.Add(this.btnIzmijeniGradilista);
@@ -260,12 +437,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gradilistaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zaposleniciBindingSource)).EndInit();
+>>>>>>> origin/master
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+<<<<<<< HEAD
+        private System.Windows.Forms.DataGridView dgvGradilista;
+        private System.Windows.Forms.BindingSource gradilistaBindingSource;
+        private System.Windows.Forms.Button btnUrediGradiliste;
+        private System.Windows.Forms.Button btnObrisiGradiliste;
+        private System.Windows.Forms.Button btnDodajGradiliste;
+        private System.Windows.Forms.DataGridView dgvZaposlenici;
+        private System.Windows.Forms.BindingSource zaposleniciBindingSource;
+        private System.Windows.Forms.Button btnObrisiZaposlenika;
+        private System.Windows.Forms.Button btnDodajZaposlenika;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oibDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn satnicaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aktivanodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aktivandoDataGridViewTextBoxColumn;
+=======
         private System.Windows.Forms.DataGridView dgvZaposlenici;
         private System.Windows.Forms.DataGridViewTextBoxColumn oibDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn;
@@ -289,5 +486,6 @@
         private System.Windows.Forms.Button btnDodajGradilista;
         private System.Windows.Forms.Button btnIzmijeniGradilista;
         private System.Windows.Forms.Button btnObrisiGradilista;
+>>>>>>> origin/master
     }
 }

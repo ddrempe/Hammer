@@ -17,9 +17,15 @@ namespace Hammer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public gradilista()
         {
+<<<<<<< HEAD
+            this.kooperanti = new HashSet<kooperanti>();
+            this.alati = new HashSet<alati>();
+            this.strojevi = new HashSet<strojevi>();
+=======
             this.izvode_radove = new HashSet<izvode_radove>();
             this.koriste = new HashSet<koriste>();
             this.rade = new HashSet<rade>();
+>>>>>>> origin/master
             this.zaposlenici = new HashSet<zaposlenici>();
         }
     
@@ -29,11 +35,19 @@ namespace Hammer
         public string aktivan_do { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+<<<<<<< HEAD
+        public virtual ICollection<kooperanti> kooperanti { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<alati> alati { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<strojevi> strojevi { get; set; }
+=======
         public virtual ICollection<izvode_radove> izvode_radove { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<koriste> koriste { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<rade> rade { get; set; }
+>>>>>>> origin/master
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<zaposlenici> zaposlenici { get; set; }
     }

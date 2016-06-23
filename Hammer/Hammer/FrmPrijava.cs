@@ -51,7 +51,7 @@ public FrmPrijava()
                 {
 
                     this.Hide();
-                    var glavniIzbornik = new FrmGlavniIzbornik();
+                    frmGlavniIzbornik glavniIzbornik = new frmGlavniIzbornik();
                     glavniIzbornik.Closed += (s, args) => this.Close();
                     glavniIzbornik.Show();
                 }

@@ -12,6 +12,49 @@ namespace Hammer
 {
     public partial class frmDodajZaposlenik : Form
     {
+<<<<<<< HEAD
+        private zaposlenici zaposlenikIzmjena;
+        public frmDodajZaposlenik()
+        {
+            InitializeComponent();
+
+        }
+        public frmDodajZaposlenik(zaposlenici zaposlenik)
+        {
+            InitializeComponent();
+            zaposlenikIzmjena = zaposlenik;
+        }
+
+        private void btnSpremi_Click(object sender, EventArgs e)
+        {
+            using (var db = new Entities())
+            {
+                if (zaposlenikIzmjena == null)
+                {
+                    zaposlenici zaposlenik = new zaposlenici();
+                    {
+                        zaposlenik.oib = txtOIB.Text;
+                        zaposlenik.ime = txtIme.Text;
+                        zaposlenik.prezime = txtPrezime.Text;
+                        zaposlenik.strucna_sprema = txtStrucna.Text;
+                        zaposlenik.satnica = txtSatnica.Text;
+                    
+                    };
+                    db.zaposlenici.Add(zaposlenik);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    txtOIB.Enabled = false;
+                    db.zaposlenici.Attach(zaposlenikIzmjena);
+                    zaposlenikIzmjena.ime = txtIme.Text;
+                    zaposlenikIzmjena.prezime = txtPrezime.Text;
+                    zaposlenikIzmjena.strucna_sprema = txtStrucna.Text;
+                    zaposlenikIzmjena.satnica = txtSatnica.Text;
+                    db.SaveChanges();
+                }
+
+=======
         public frmDodajZaposlenik()
         {
             InitializeComponent();
@@ -32,6 +75,7 @@ namespace Hammer
                 };
                 db.zaposlenici.Add(zaposlenik);
                 db.SaveChanges();
+>>>>>>> origin/master
             }
             Close();
         }
@@ -40,5 +84,21 @@ namespace Hammer
         {
             this.Close();
         }
+<<<<<<< HEAD
+
+        private void frmDodajZaposlenik_Load(object sender, EventArgs e)
+        {
+            if (zaposlenikIzmjena != null)
+            {
+                txtOIB.Enabled = false;
+                txtOIB.Text = zaposlenikIzmjena.oib;
+                txtIme.Text = zaposlenikIzmjena.ime;
+                txtPrezime.Text = zaposlenikIzmjena.prezime;
+                txtStrucna.Text = zaposlenikIzmjena.strucna_sprema;
+                txtSatnica.Text = zaposlenikIzmjena.satnica;
+            }
+        }
+=======
+>>>>>>> origin/master
     }
 }
