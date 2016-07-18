@@ -125,5 +125,26 @@ namespace Hammer
         {
             forma4 = null;
         }
+
+        //Pokretanje forme za pregled strojeva
+        frmStrojevi forma5;
+        private void evidencijaStrojevaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (forma5 == null)
+            {
+                forma5 = new frmStrojevi();
+                forma5.MdiParent = this;
+                forma5.FormClosed += new FormClosedEventHandler(Forma5_FormClosed);
+                forma5.Show();
+            }
+            else
+            {
+                forma5.Activate();
+            }
+        }
+        private void Forma5_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            forma5 = null;
+        }
     }
 }

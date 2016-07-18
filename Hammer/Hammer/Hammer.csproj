@@ -87,6 +87,12 @@
     <Compile Include="frmDodajGradiliste.Designer.cs">
       <DependentUpon>frmDodajGradiliste.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDodajStroj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajStroj.Designer.cs">
+      <DependentUpon>frmDodajStroj.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodajZaposlenik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,12 @@
     </Compile>
     <Compile Include="FrmPrijava.Designer.cs">
       <DependentUpon>FrmPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStrojevi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStrojevi.Designer.cs">
+      <DependentUpon>frmStrojevi.cs</DependentUpon>
     </Compile>
     <Compile Include="frmZaposlenici.cs">
       <SubType>Form</SubType>
@@ -212,6 +224,9 @@
     <EmbeddedResource Include="frmDodajGradiliste.resx">
       <DependentUpon>frmDodajGradiliste.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajStroj.resx">
+      <DependentUpon>frmDodajStroj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodajZaposlenik.resx">
       <DependentUpon>frmDodajZaposlenik.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrijava.resx">
       <DependentUpon>FrmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStrojevi.resx">
+      <DependentUpon>frmStrojevi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmZaposlenici.resx">
       <DependentUpon>frmZaposlenici.cs</DependentUpon>
@@ -256,6 +274,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\alati.datasource" />
     <None Include="Properties\DataSources\gradilista.datasource" />
+    <None Include="Properties\DataSources\strojevi.datasource" />
     <None Include="Properties\DataSources\zaposlenici.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

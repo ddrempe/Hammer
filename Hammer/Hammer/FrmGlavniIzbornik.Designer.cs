@@ -145,6 +145,7 @@
             this.evidencijaStrojevaToolStripMenuItem.Name = "evidencijaStrojevaToolStripMenuItem";
             this.evidencijaStrojevaToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.evidencijaStrojevaToolStripMenuItem.Text = "Evidencija strojeva";
+            this.evidencijaStrojevaToolStripMenuItem.Click += new System.EventHandler(this.evidencijaStrojevaToolStripMenuItem_Click);
             // 
             // gradilištaIDodjeljivanjeStrojevaToolStripMenuItem
             // 
