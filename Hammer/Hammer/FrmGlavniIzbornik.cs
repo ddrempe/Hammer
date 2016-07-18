@@ -83,5 +83,26 @@ namespace Hammer
         {
             Application.Exit();
         }
+
+        //Pokretanje forme za pregled alata
+        frmAlati forma3;
+        private void evidencijaAlataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (forma3 == null)
+            {
+                forma3 = new frmAlati();
+                forma3.MdiParent = this;
+                forma3.FormClosed += new FormClosedEventHandler(Forma3_FormClosed);
+                forma3.Show();
+            }
+            else
+            {
+                forma3.Activate();
+            }
+        }
+        private void Forma3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            forma3 = null;
+        }
     }
 }

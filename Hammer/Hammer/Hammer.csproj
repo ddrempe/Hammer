@@ -69,6 +69,18 @@
     <Compile Include="dobavljaci_materijali.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="frmAlati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlati.Designer.cs">
+      <DependentUpon>frmAlati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajAlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajAlat.Designer.cs">
+      <DependentUpon>frmDodajAlat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodajGradiliste.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +191,12 @@
     <Compile Include="zaposlenici.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAlati.resx">
+      <DependentUpon>frmAlati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajAlat.resx">
+      <DependentUpon>frmDodajAlat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodajGradiliste.resx">
       <DependentUpon>frmDodajGradiliste.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +236,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\alati.datasource" />
     <None Include="Properties\DataSources\gradilista.datasource" />
     <None Include="Properties\DataSources\zaposlenici.datasource" />
     <None Include="Properties\Settings.settings">
