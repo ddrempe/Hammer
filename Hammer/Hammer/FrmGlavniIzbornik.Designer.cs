@@ -136,6 +136,7 @@
             this.gradilištaIDodjeljivanjeAlataToolStripMenuItem.Name = "gradilištaIDodjeljivanjeAlataToolStripMenuItem";
             this.gradilištaIDodjeljivanjeAlataToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.gradilištaIDodjeljivanjeAlataToolStripMenuItem.Text = "Gradilišta i dodjeljivanje alata";
+            this.gradilištaIDodjeljivanjeAlataToolStripMenuItem.Click += new System.EventHandler(this.gradilištaIDodjeljivanjeAlataToolStripMenuItem_Click);
             // 
             // evidencijaStrojevaToolStripMenuItem
             // 

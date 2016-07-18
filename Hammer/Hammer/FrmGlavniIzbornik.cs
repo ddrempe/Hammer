@@ -104,5 +104,26 @@ namespace Hammer
         {
             forma3 = null;
         }
+
+        //Pokretanje forme za dodjeljivanje alata gradilištima
+        FrmEvidencijaGiAlati forma4;
+        private void gradilištaIDodjeljivanjeAlataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (forma4 == null)
+            {
+                forma4 = new FrmEvidencijaGiAlati();
+                forma4.MdiParent = this;
+                forma4.FormClosed += new FormClosedEventHandler(Forma4_FormClosed);
+                forma4.Show();
+            }
+            else
+            {
+                forma4.Activate();
+            }
+        }
+        private void Forma4_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            forma4 = null;
+        }
     }
 }
