@@ -105,6 +105,12 @@
     <Compile Include="frmDodijeliAlat.Designer.cs">
       <DependentUpon>frmDodijeliAlat.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDodijeliStroj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodijeliStroj.Designer.cs">
+      <DependentUpon>frmDodijeliStroj.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodijeliZaposlenika.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <Compile Include="FrmEvidencijaGiAlati.Designer.cs">
       <DependentUpon>FrmEvidencijaGiAlati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEvidencijaGiStrojevi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvidencijaGiStrojevi.Designer.cs">
+      <DependentUpon>FrmEvidencijaGiStrojevi.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEvidencijaGiZ.cs">
       <SubType>Form</SubType>
@@ -233,11 +245,17 @@
     <EmbeddedResource Include="frmDodijeliAlat.resx">
       <DependentUpon>frmDodijeliAlat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDodijeliStroj.resx">
+      <DependentUpon>frmDodijeliStroj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodijeliZaposlenika.resx">
       <DependentUpon>frmDodijeliZaposlenika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEvidencijaGiAlati.resx">
       <DependentUpon>FrmEvidencijaGiAlati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEvidencijaGiStrojevi.resx">
+      <DependentUpon>FrmEvidencijaGiStrojevi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEvidencijaGiZ.resx">
       <DependentUpon>FrmEvidencijaGiZ.cs</DependentUpon>

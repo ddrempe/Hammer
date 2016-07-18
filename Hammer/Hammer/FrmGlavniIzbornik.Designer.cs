@@ -152,6 +152,7 @@
             this.gradilištaIDodjeljivanjeStrojevaToolStripMenuItem.Name = "gradilištaIDodjeljivanjeStrojevaToolStripMenuItem";
             this.gradilištaIDodjeljivanjeStrojevaToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.gradilištaIDodjeljivanjeStrojevaToolStripMenuItem.Text = "Gradilišta i dodjeljivanje strojeva";
+            this.gradilištaIDodjeljivanjeStrojevaToolStripMenuItem.Click += new System.EventHandler(this.gradilištaIDodjeljivanjeStrojevaToolStripMenuItem_Click);
             // 
             // evidencijaVoznogParkaToolStripMenuItem
             // 
