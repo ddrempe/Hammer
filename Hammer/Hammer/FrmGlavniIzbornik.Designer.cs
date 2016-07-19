@@ -161,6 +161,7 @@
             this.evidencijaVoznogParkaToolStripMenuItem.Name = "evidencijaVoznogParkaToolStripMenuItem";
             this.evidencijaVoznogParkaToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.evidencijaVoznogParkaToolStripMenuItem.Text = "Evidencija voznog parka";
+            this.evidencijaVoznogParkaToolStripMenuItem.Click += new System.EventHandler(this.evidencijaVoznogParkaToolStripMenuItem_Click);
             // 
             // zaposleniciIDodjeljivanjeVozilaToolStripMenuItem
             // 

@@ -167,5 +167,26 @@ namespace Hammer
         {
             forma6 = null;
         }
+
+        //Pokretanje forme za pregled voznog parka
+        frmVozniPark forma7;
+        private void evidencijaVoznogParkaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (forma7 == null)
+            {
+                forma7 = new frmVozniPark();
+                forma7.MdiParent = this;
+                forma7.FormClosed += new FormClosedEventHandler(Forma7_FormClosed);
+                forma7.Show();
+            }
+            else
+            {
+                forma7.Activate();
+            }
+        }
+        private void Forma7_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            forma7 = null;
+        }
     }
 }

@@ -93,6 +93,12 @@
     <Compile Include="frmDodajStroj.Designer.cs">
       <DependentUpon>frmDodajStroj.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDodajVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajVozilo.Designer.cs">
+      <DependentUpon>frmDodajVozilo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodajZaposlenik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,12 @@
     <Compile Include="frmStrojevi.Designer.cs">
       <DependentUpon>frmStrojevi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVozniPark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVozniPark.Designer.cs">
+      <DependentUpon>frmVozniPark.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmZaposlenici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +251,9 @@
     <EmbeddedResource Include="frmDodajStroj.resx">
       <DependentUpon>frmDodajStroj.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajVozilo.resx">
+      <DependentUpon>frmDodajVozilo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodajZaposlenik.resx">
       <DependentUpon>frmDodajZaposlenik.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +284,9 @@
     <EmbeddedResource Include="frmStrojevi.resx">
       <DependentUpon>frmStrojevi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVozniPark.resx">
+      <DependentUpon>frmVozniPark.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmZaposlenici.resx">
       <DependentUpon>frmZaposlenici.cs</DependentUpon>
     </EmbeddedResource>
@@ -293,6 +311,7 @@
     <None Include="Properties\DataSources\alati.datasource" />
     <None Include="Properties\DataSources\gradilista.datasource" />
     <None Include="Properties\DataSources\strojevi.datasource" />
+    <None Include="Properties\DataSources\vozni_park.datasource" />
     <None Include="Properties\DataSources\zaposlenici.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
