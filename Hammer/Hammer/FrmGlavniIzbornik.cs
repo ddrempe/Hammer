@@ -188,5 +188,26 @@ namespace Hammer
         {
             forma7 = null;
         }
+
+        //Pokretanje forme za dodjeljivanje vozila zaposlenicima
+        FrmEvidencijaZiVozila forma8;
+        private void zaposleniciIDodjeljivanjeVozilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (forma8 == null)
+            {
+                forma8 = new FrmEvidencijaZiVozila();
+                forma8.MdiParent = this;
+                forma8.FormClosed += new FormClosedEventHandler(Forma8_FormClosed);
+                forma8.Show();
+            }
+            else
+            {
+                forma8.Activate();
+            }
+        }
+        private void Forma8_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            forma8 = null;
+        }
     }
 }

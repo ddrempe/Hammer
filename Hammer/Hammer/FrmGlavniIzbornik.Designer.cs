@@ -168,6 +168,7 @@
             this.zaposleniciIDodjeljivanjeVozilaToolStripMenuItem.Name = "zaposleniciIDodjeljivanjeVozilaToolStripMenuItem";
             this.zaposleniciIDodjeljivanjeVozilaToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.zaposleniciIDodjeljivanjeVozilaToolStripMenuItem.Text = "Zaposlenici i dodjeljivanje vozila";
+            this.zaposleniciIDodjeljivanjeVozilaToolStripMenuItem.Click += new System.EventHandler(this.zaposleniciIDodjeljivanjeVozilaToolStripMenuItem_Click);
             // 
             // evidencijaMaterijalaToolStripMenuItem
             // 
