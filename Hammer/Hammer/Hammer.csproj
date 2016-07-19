@@ -87,6 +87,12 @@
     <Compile Include="frmDodajGradiliste.Designer.cs">
       <DependentUpon>frmDodajGradiliste.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDodajMaterijal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajMaterijal.Designer.cs">
+      <DependentUpon>frmDodajMaterijal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodajStroj.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,12 @@
     <Compile Include="frmGlavniIzbornik.Designer.cs">
       <DependentUpon>frmGlavniIzbornik.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMaterijali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaterijali.Designer.cs">
+      <DependentUpon>frmMaterijali.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrijava.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +272,9 @@
     <EmbeddedResource Include="frmDodajGradiliste.resx">
       <DependentUpon>frmDodajGradiliste.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajMaterijal.resx">
+      <DependentUpon>frmDodajMaterijal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodajStroj.resx">
       <DependentUpon>frmDodajStroj.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +311,9 @@
     <EmbeddedResource Include="frmGlavniIzbornik.resx">
       <DependentUpon>frmGlavniIzbornik.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMaterijali.resx">
+      <DependentUpon>frmMaterijali.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrijava.resx">
       <DependentUpon>FrmPrijava.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +346,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\alati.datasource" />
     <None Include="Properties\DataSources\gradilista.datasource" />
+    <None Include="Properties\DataSources\materijali.datasource" />
     <None Include="Properties\DataSources\strojevi.datasource" />
     <None Include="Properties\DataSources\vozni_park.datasource" />
     <None Include="Properties\DataSources\zaposlenici.datasource" />

@@ -209,5 +209,26 @@ namespace Hammer
         {
             forma8 = null;
         }
+
+        //Pokretanje forme za pregled materijala
+        frmMaterijali forma9;
+        private void evidencijaMaterijalaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (forma9 == null)
+            {
+                forma9 = new frmMaterijali();
+                forma9.MdiParent = this;
+                forma9.FormClosed += new FormClosedEventHandler(Forma9_FormClosed);
+                forma9.Show();
+            }
+            else
+            {
+                forma9.Activate();
+            }
+        }
+        private void Forma9_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            forma9 = null;
+        }
     }
 }
