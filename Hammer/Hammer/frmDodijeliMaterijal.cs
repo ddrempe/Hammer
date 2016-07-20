@@ -63,8 +63,12 @@ namespace Hammer
                 skladiste_materijali SiM = new skladiste_materijali();
                 SiM.materijali_id = int.Parse(cmbMaterijal.SelectedValue.ToString());
                 SiM.skladiste_id = int.Parse(txtSkladiste.Text);
-                SiM.kolicina = int.Parse(txtKolicina.Text);
                 SiM.opis = txtOpis.Text;
+
+                int rkolicina;
+                if (int.TryParse((txtKolicina.Text), out rkolicina)) SiM.kolicina = rkolicina;
+                else MessageBox.Show("Greška kod validacije korisničkog unosa! (Količina)");
+
                 db.skladiste_materijali.Add(SiM);
                 db.SaveChanges();
             }

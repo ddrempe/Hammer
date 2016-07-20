@@ -219,6 +219,12 @@
     <Compile Include="frmStrojevi.Designer.cs">
       <DependentUpon>frmStrojevi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUrediSiM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrediSiM.Designer.cs">
+      <DependentUpon>frmUrediSiM.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVozniPark.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -346,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStrojevi.resx">
       <DependentUpon>frmStrojevi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrediSiM.resx">
+      <DependentUpon>frmUrediSiM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVozniPark.resx">
       <DependentUpon>frmVozniPark.cs</DependentUpon>

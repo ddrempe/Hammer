@@ -119,5 +119,16 @@ namespace Hammer
             }
             PrikaziMaterijale(trenutnoSkladiste);
         }
+
+        private void btnUrediMaterijal_Click(object sender, EventArgs e)
+        {
+            skladiste_materijali trenutnoSiM = skladistematerijaliBindingSource.Current as skladiste_materijali;
+            if (trenutnoSiM != null)
+            {
+                frmUrediSiM formaUrediSiM = new frmUrediSiM(trenutnoSiM);
+                formaUrediSiM.ShowDialog();
+                PrikaziSkladista();
+            }
+        }
     }
 }
