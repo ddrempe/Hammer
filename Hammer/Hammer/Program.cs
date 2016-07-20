@@ -16,7 +16,7 @@ namespace Hammer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGlavniIzbornik());
+            Application.Run(new FrmPrijava());
         }
     }
 }

@@ -60,18 +60,41 @@ namespace Hammer
         {
             using (var db = new Entities())
             {
-                BindingList<vozni_park> listaVozila = null;
-                listaVozila = new BindingList<vozni_park>(db.vozni_park.ToList());
-                var zaposlenik = db.zaposlenici.FirstOrDefault(m => m.oib == zaposlenikDodijeli.oib);
-                vozni_park vozilo = new vozni_park();
-                vozni_park voziloOznaceno = new vozni_park() { id = int.Parse(cmbVozilo.SelectedValue.ToString()) };
-                foreach (var item in db.vozni_park)
-                {
-                    if (item.id == voziloOznaceno.id)
-                        vozilo = item;
+                if (cmbVozilo.SelectedValue != null) {
+                    int sumaVozila = 1;
+                    int idOdabranogVozila = int.Parse(cmbVozilo.SelectedValue.ToString());
+
+                    foreach (var item in db.zaposlenici) {
+                        foreach (var redak in item.vozni_park) {
+                            if (redak.id == int.Parse(cmbVozilo.SelectedValue.ToString())) {
+                                sumaVozila++;
+                            }
+                        }
+                    }
+
+                    var odabranoVozilo = db.vozni_park.FirstOrDefault(m => m.id == idOdabranogVozila);
+
+                    if (sumaVozila > odabranoVozilo.kolicina)
+                    {
+                        MessageBox.Show("Sva vozila odabranog modela su već dodijeljena!");
+                    }
+
+                    else
+                    {
+                        BindingList<vozni_park> listaVozila = null;
+                        listaVozila = new BindingList<vozni_park>(db.vozni_park.ToList());
+                        var zaposlenik = db.zaposlenici.FirstOrDefault(m => m.oib == zaposlenikDodijeli.oib);
+                        vozni_park vozilo = new vozni_park();
+                        vozni_park voziloOznaceno = new vozni_park() { id = int.Parse(cmbVozilo.SelectedValue.ToString()) };
+                        foreach (var item in db.vozni_park)
+                        {
+                            if (item.id == voziloOznaceno.id)
+                                vozilo = item;
+                        }
+                        vozilo.zaposlenici.Add(zaposlenik);
+                        db.SaveChanges();
+                    }
                 }
-                vozilo.zaposlenici.Add(zaposlenik);
-                db.SaveChanges();
             }
             Close();
         }

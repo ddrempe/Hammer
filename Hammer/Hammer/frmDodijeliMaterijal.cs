@@ -61,16 +61,34 @@ namespace Hammer
             using (var db = new Entities())
             {
                 skladiste_materijali SiM = new skladiste_materijali();
-                SiM.materijali_id = int.Parse(cmbMaterijal.SelectedValue.ToString());
-                SiM.skladiste_id = int.Parse(txtSkladiste.Text);
-                SiM.opis = txtOpis.Text;
-
                 int rkolicina;
                 if (int.TryParse((txtKolicina.Text), out rkolicina)) SiM.kolicina = rkolicina;
                 else MessageBox.Show("Greška kod validacije korisničkog unosa! (Količina)");
 
-                db.skladiste_materijali.Add(SiM);
-                db.SaveChanges();
+                int sumaKolicinaMaterijala=0;
+                foreach (skladiste_materijali redak in db.skladiste_materijali) {
+                    if (redak.skladiste_id == skladisteDodijeli.id) {
+                        sumaKolicinaMaterijala += redak.kolicina.Value;
+                    }
+                }
+                sumaKolicinaMaterijala += rkolicina;
+                if (sumaKolicinaMaterijala > skladisteDodijeli.kapacitet)
+                {
+                    MessageBox.Show("Nije moguće dodati materijal na skladište! Količina materijala premašuje kapacitet skladišta.");
+                }
+                else if (cmbMaterijal.SelectedValue==null)
+                {
+                    MessageBox.Show("Skladištu su dodijeljeni već svi materijali!");
+                }
+                else
+                {
+                    SiM.materijali_id = int.Parse(cmbMaterijal.SelectedValue.ToString());
+                    SiM.skladiste_id = int.Parse(txtSkladiste.Text);
+                    SiM.opis = txtOpis.Text;
+
+                    db.skladiste_materijali.Add(SiM);
+                    db.SaveChanges();
+                }
             }
             Close();
         }

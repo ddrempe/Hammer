@@ -65,18 +65,44 @@ namespace Hammer
         {
             using (var db = new Entities())
             {
-                BindingList<alati> listaAlata = null;
-                listaAlata = new BindingList<alati>(db.alati.ToList());
-                var gradiliste = db.gradilista.FirstOrDefault(m => m.ID == gradilisteDodijeli.ID);
-                alati alat = new alati();
-                alati alatOznacen = new alati() { id = int.Parse(cmbAlat.SelectedValue.ToString()) };
-                foreach (var item in db.alati)
+                if (cmbAlat.SelectedValue != null)
                 {
-                    if (item.id == alatOznacen.id)
-                        alat = item;
+                    int sumaAlata = 1;
+                    int idOdabranogAlata = int.Parse(cmbAlat.SelectedValue.ToString());
+
+                    foreach (var item in db.gradilista)
+                    {
+                        foreach (var redak in item.alati)
+                        {
+                            if (redak.id == idOdabranogAlata)
+                            {
+                                sumaAlata++;
+                            }
+                        }
+                    }
+
+                    var odabraniAlat = db.alati.FirstOrDefault(m => m.id == idOdabranogAlata);
+
+                    if (sumaAlata > odabraniAlat.kolicina)
+                    {
+                        MessageBox.Show("Sve jedinice odabranog alata su već dodijeljena gradilištima!");
+                    }
+                    else
+                    {
+                        BindingList<alati> listaAlata = null;
+                        listaAlata = new BindingList<alati>(db.alati.ToList());
+                        var gradiliste = db.gradilista.FirstOrDefault(m => m.ID == gradilisteDodijeli.ID);
+                        alati alat = new alati();
+                        alati alatOznacen = new alati() { id = int.Parse(cmbAlat.SelectedValue.ToString()) };
+                        foreach (var item in db.alati)
+                        {
+                            if (item.id == alatOznacen.id)
+                                alat = item;
+                        }
+                        alat.gradilista.Add(gradiliste);
+                        db.SaveChanges();
+                    }
                 }
-                alat.gradilista.Add(gradiliste);
-                db.SaveChanges();
             }
             Close();
         }

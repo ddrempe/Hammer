@@ -147,12 +147,6 @@
     <Compile Include="frmDodijeliZaposlenika.Designer.cs">
       <DependentUpon>frmDodijeliZaposlenika.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEvidencijaASiV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEvidencijaASiV.Designer.cs">
-      <DependentUpon>FrmEvidencijaASiV.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmEvidencijaGiAlati.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,12 +164,6 @@
     </Compile>
     <Compile Include="FrmEvidencijaGiZ.Designer.cs">
       <DependentUpon>FrmEvidencijaGiZ.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmEvidencijaSiM.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEvidencijaSiM.Designer.cs">
-      <DependentUpon>FrmEvidencijaSiM.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEvidencijaDiK.cs">
       <SubType>Form</SubType>

@@ -33,12 +33,6 @@
             this.btnDodajVozilo = new System.Windows.Forms.Button();
             this.dgvZaposlenici = new System.Windows.Forms.DataGridView();
             this.dgvVozila = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cijenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolicinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.servisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zaposleniciDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vozniparkBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +42,12 @@
             this.gradilistaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vozniparkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zaposleniciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cijenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolicinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.servisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zaposleniciDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZaposlenici)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVozila)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vozniparkBindingSource)).BeginInit();
@@ -110,44 +110,6 @@
             this.dgvVozila.Size = new System.Drawing.Size(659, 110);
             this.dgvVozila.TabIndex = 9;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nazivDataGridViewTextBoxColumn
-            // 
-            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
-            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
-            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
-            // 
-            // cijenaDataGridViewTextBoxColumn
-            // 
-            this.cijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena";
-            this.cijenaDataGridViewTextBoxColumn.HeaderText = "Cijena";
-            this.cijenaDataGridViewTextBoxColumn.Name = "cijenaDataGridViewTextBoxColumn";
-            // 
-            // kolicinaDataGridViewTextBoxColumn
-            // 
-            this.kolicinaDataGridViewTextBoxColumn.DataPropertyName = "kolicina";
-            this.kolicinaDataGridViewTextBoxColumn.HeaderText = "Količina";
-            this.kolicinaDataGridViewTextBoxColumn.Name = "kolicinaDataGridViewTextBoxColumn";
-            // 
-            // servisDataGridViewTextBoxColumn
-            // 
-            this.servisDataGridViewTextBoxColumn.DataPropertyName = "servis";
-            this.servisDataGridViewTextBoxColumn.HeaderText = "Datum servisa";
-            this.servisDataGridViewTextBoxColumn.Name = "servisDataGridViewTextBoxColumn";
-            this.servisDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // zaposleniciDataGridViewTextBoxColumn
-            // 
-            this.zaposleniciDataGridViewTextBoxColumn.DataPropertyName = "zaposlenici";
-            this.zaposleniciDataGridViewTextBoxColumn.HeaderText = "zaposlenici";
-            this.zaposleniciDataGridViewTextBoxColumn.Name = "zaposleniciDataGridViewTextBoxColumn";
-            this.zaposleniciDataGridViewTextBoxColumn.Visible = false;
-            // 
             // vozniparkBindingSource
             // 
             this.vozniparkBindingSource.DataSource = typeof(Hammer.vozni_park);
@@ -200,6 +162,47 @@
             // zaposleniciBindingSource
             // 
             this.zaposleniciBindingSource.DataSource = typeof(Hammer.zaposlenici);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // nazivDataGridViewTextBoxColumn
+            // 
+            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
+            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
+            this.nazivDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // cijenaDataGridViewTextBoxColumn
+            // 
+            this.cijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena";
+            this.cijenaDataGridViewTextBoxColumn.HeaderText = "Cijena";
+            this.cijenaDataGridViewTextBoxColumn.Name = "cijenaDataGridViewTextBoxColumn";
+            // 
+            // kolicinaDataGridViewTextBoxColumn
+            // 
+            this.kolicinaDataGridViewTextBoxColumn.DataPropertyName = "kolicina";
+            this.kolicinaDataGridViewTextBoxColumn.HeaderText = "Količina";
+            this.kolicinaDataGridViewTextBoxColumn.Name = "kolicinaDataGridViewTextBoxColumn";
+            this.kolicinaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // servisDataGridViewTextBoxColumn
+            // 
+            this.servisDataGridViewTextBoxColumn.DataPropertyName = "servis";
+            this.servisDataGridViewTextBoxColumn.HeaderText = "Datum servisa";
+            this.servisDataGridViewTextBoxColumn.Name = "servisDataGridViewTextBoxColumn";
+            this.servisDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // zaposleniciDataGridViewTextBoxColumn
+            // 
+            this.zaposleniciDataGridViewTextBoxColumn.DataPropertyName = "zaposlenici";
+            this.zaposleniciDataGridViewTextBoxColumn.HeaderText = "zaposlenici";
+            this.zaposleniciDataGridViewTextBoxColumn.Name = "zaposleniciDataGridViewTextBoxColumn";
+            this.zaposleniciDataGridViewTextBoxColumn.Visible = false;
             // 
             // FrmEvidencijaZiVozila
             // 

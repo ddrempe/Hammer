@@ -37,14 +37,11 @@ namespace Hammer
             using (var db = new Entities())
             {
                 gradilista gradiliste = db.gradilista.FirstOrDefault(m => m.ID == gradilisteDodijeli.ID);
-                foreach (var item in db.strojevi)
+                foreach (var item in db.gradilista)
                 {
-                    foreach (var stroj in gradiliste.strojevi)
+                    foreach (var stroj in item.strojevi)
                     {
-                        if (stroj == item)
-                        {
-                            listaPostojecih.Add(stroj);
-                        }
+                        listaPostojecih.Add(stroj);
                     }
                 }
                 listaStrojeva = new BindingList<strojevi>(db.strojevi.ToList());
@@ -65,18 +62,25 @@ namespace Hammer
         {
             using (var db = new Entities())
             {
-                BindingList<strojevi> listaStrojeva = null;
-                listaStrojeva = new BindingList<strojevi>(db.strojevi.ToList());
-                var gradiliste = db.gradilista.FirstOrDefault(m => m.ID == gradilisteDodijeli.ID);
-                strojevi stroj = new strojevi();
-                strojevi strojOznacen = new strojevi() { id = int.Parse(cmbStroj.SelectedValue.ToString()) };
-                foreach (var item in db.strojevi)
+                if (cmbStroj.SelectedValue != null)
                 {
-                    if (item.id == strojOznacen.id)
-                        stroj = item;
+                    BindingList<strojevi> listaStrojeva = null;
+                    listaStrojeva = new BindingList<strojevi>(db.strojevi.ToList());
+                    var gradiliste = db.gradilista.FirstOrDefault(m => m.ID == gradilisteDodijeli.ID);
+                    strojevi stroj = new strojevi();
+                    strojevi strojOznacen = new strojevi() { id = int.Parse(cmbStroj.SelectedValue.ToString()) };
+                    foreach (var item in db.strojevi)
+                    {
+                        if (item.id == strojOznacen.id)
+                            stroj = item;
+                    }
+                    stroj.gradilista.Add(gradiliste);
+                    db.SaveChanges();
                 }
-                stroj.gradilista.Add(gradiliste);
-                db.SaveChanges();
+                else
+                {
+                    MessageBox.Show("Nema strojeva na raspolaganju!");
+                }
             }
             Close();
         }
