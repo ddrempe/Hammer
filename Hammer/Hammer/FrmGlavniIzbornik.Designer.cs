@@ -45,13 +45,13 @@
             this.evidencijaVoznogParkaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zaposleniciIDodjeljivanjeVozilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.evidencijaSkladistaMaterijalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.evidencijaMaterijalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.obračunPlaćaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.evidencijaDobavljačaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izlazToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.evidencijaMaterijalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -181,6 +181,20 @@
             this.evidencijaSkladistaMaterijalaToolStripMenuItem.Size = new System.Drawing.Size(181, 20);
             this.evidencijaSkladistaMaterijalaToolStripMenuItem.Text = "Evidencija skladišta i materijala";
             // 
+            // evidencijaMaterijalaToolStripMenuItem
+            // 
+            this.evidencijaMaterijalaToolStripMenuItem.Name = "evidencijaMaterijalaToolStripMenuItem";
+            this.evidencijaMaterijalaToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.evidencijaMaterijalaToolStripMenuItem.Text = "Evidencija materijala";
+            this.evidencijaMaterijalaToolStripMenuItem.Click += new System.EventHandler(this.evidencijaMaterijalaToolStripMenuItem_Click);
+            // 
+            // skladištaIDodjeljivanjeMaterijalaToolStripMenuItem
+            // 
+            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem.Name = "skladištaIDodjeljivanjeMaterijalaToolStripMenuItem";
+            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem.Text = "Skladišta i dodjeljivanje materijala";
+            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem.Click += new System.EventHandler(this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem_Click);
+            // 
             // obračunPlaćaToolStripMenuItem
             // 
             this.obračunPlaćaToolStripMenuItem.Name = "obračunPlaćaToolStripMenuItem";
@@ -210,19 +224,6 @@
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "C:\\Users\\Matej Cvitkovic\\Documents\\Hammer\\help.chm";
-            // 
-            // evidencijaMaterijalaToolStripMenuItem
-            // 
-            this.evidencijaMaterijalaToolStripMenuItem.Name = "evidencijaMaterijalaToolStripMenuItem";
-            this.evidencijaMaterijalaToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.evidencijaMaterijalaToolStripMenuItem.Text = "Evidencija materijala";
-            this.evidencijaMaterijalaToolStripMenuItem.Click += new System.EventHandler(this.evidencijaMaterijalaToolStripMenuItem_Click);
-            // 
-            // skladištaIDodjeljivanjeMaterijalaToolStripMenuItem
-            // 
-            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem.Name = "skladištaIDodjeljivanjeMaterijalaToolStripMenuItem";
-            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.skladištaIDodjeljivanjeMaterijalaToolStripMenuItem.Text = "Skladišta i dodjeljivanje materijala";
             // 
             // frmGlavniIzbornik
             // 

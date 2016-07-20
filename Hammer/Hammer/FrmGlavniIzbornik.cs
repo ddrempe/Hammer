@@ -230,5 +230,26 @@ namespace Hammer
         {
             forma9 = null;
         }
+
+        //Pokretanje forme za dodjeljivanje materijala skladištima
+        FrmEvidencijaSiMaterijala forma10;
+        private void skladištaIDodjeljivanjeMaterijalaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (forma10 == null)
+            {
+                forma10 = new FrmEvidencijaSiMaterijala();
+                forma10.MdiParent = this;
+                forma10.FormClosed += new FormClosedEventHandler(Forma10_FormClosed);
+                forma10.Show();
+            }
+            else
+            {
+                forma10.Activate();
+            }
+        }
+        private void Forma10_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            forma10 = null;
+        }
     }
 }
