@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DodijeliSpremi;
 
 namespace Hammer
 {
@@ -63,45 +64,16 @@ namespace Hammer
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-            using (var db = new Entities())
-            {
-                if (cmbAlat.SelectedValue != null)
+            if (cmbAlat.SelectedValue != null){
+                int idOdabranogAlata = int.Parse(cmbAlat.SelectedValue.ToString());
+
+                if (DodijeliAlat.Provjeri(idOdabranogAlata)==false)
                 {
-                    int sumaAlata = 1;
-                    int idOdabranogAlata = int.Parse(cmbAlat.SelectedValue.ToString());
-
-                    foreach (var item in db.gradilista)
-                    {
-                        foreach (var redak in item.alati)
-                        {
-                            if (redak.id == idOdabranogAlata)
-                            {
-                                sumaAlata++;
-                            }
-                        }
-                    }
-
-                    var odabraniAlat = db.alati.FirstOrDefault(m => m.id == idOdabranogAlata);
-
-                    if (sumaAlata > odabraniAlat.kolicina)
-                    {
-                        MessageBox.Show("Sve jedinice odabranog alata su već dodijeljena gradilištima!");
-                    }
-                    else
-                    {
-                        BindingList<alati> listaAlata = null;
-                        listaAlata = new BindingList<alati>(db.alati.ToList());
-                        var gradiliste = db.gradilista.FirstOrDefault(m => m.ID == gradilisteDodijeli.ID);
-                        alati alat = new alati();
-                        alati alatOznacen = new alati() { id = int.Parse(cmbAlat.SelectedValue.ToString()) };
-                        foreach (var item in db.alati)
-                        {
-                            if (item.id == alatOznacen.id)
-                                alat = item;
-                        }
-                        alat.gradilista.Add(gradiliste);
-                        db.SaveChanges();
-                    }
+                    MessageBox.Show("Sve jedinice odabranog alata su već dodijeljena gradilištima!");
+                }
+                else
+                {
+                    DodijeliAlat.Spremi(idOdabranogAlata, gradilisteDodijeli);
                 }
             }
             Close();
